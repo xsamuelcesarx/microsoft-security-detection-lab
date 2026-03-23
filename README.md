@@ -21,6 +21,16 @@ My name is **Samuel Cesar**, and I have been studying Cybersecurity for over a y
 
 ## 🖥️ Lab Overview
 
+⚠️ Important Note – Role-Based Access Control (RBAC)
+
+When working with Log Analytics Workspace, Microsoft Defender, and Microsoft Sentinel, certain actions require specific permissions.
+
+If you are not using a Global Administrator account, you must have the appropriate role assigned to perform tasks such as creating workspaces, configuring Sentinel, or managing integrations.
+Microsoft solutions are based on RBAC (Role-Based Access Control), so always verify that your account has the necessary roles and permissions before starting the lab.
+
+💡 Tip:
+Use the least privileged role needed for each task. This helps you practice real-world security best practices while avoiding permission issues.
+
 In this walkthrough, I will explore **Microsoft Defender XDR** and **Microsoft Sentinel** to demonstrate:
 
 - Creating a Microsoft subscription and performing onboarding  
