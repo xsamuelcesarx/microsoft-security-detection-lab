@@ -32,9 +32,11 @@ I will use one Windows 11 VM to connect and ingest logs for testing purposes, wh
 This VM will be connected via Microsoft Defender for Endpoint (MDE). I will perform MDE onboarding on the VM, which will allow me to better understand how endpoint telemetry is collected and ingested into Microsoft Sentinel.
 Important Note:
 When using a VM to integrate with MDE for log ingestion into Sentinel:
+
     • Set the VM’s network adapter to Bridged mode. This ensures the endpoint sensor can communicate directly with Microsoft Defender cloud services via secure HTTPS endpoints. On Windows, the agent uses WinHTTP (Windows HTTP Services) to make these HTTPS calls.
     • Ensure the VM has internet access and can reach all required MDE URLs; otherwise, onboarding and telemetry collection will fail.
     • Proper network configuration is essential for the sensor to successfully send logs and enrich Sentinel.
+    
 This setup provides a safe, isolated lab environment for testing, learning, and understanding how MDE and Sentinel interact.
 Before simulating attacks on the VM, ensure that PowerShell script execution policies are properly configured (execution policy is not restricted). 
 Microsoft Defender Antivirus should be disabled or adjusted, and additional protection features such as ASR rules and security policies (e.g., AV policies) should be turned off or configured accordingly to prevent interference with the simulation.
